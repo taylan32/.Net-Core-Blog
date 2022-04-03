@@ -13,7 +13,11 @@ namespace Business.ValidationRules.FluentValidation
     {
         public CategoryValidator()
         {
-            RuleFor(c => c.Name).NotEmpty().WithMessage(Messages.CategoryDescriptionEmpty);
+            RuleFor(c => c.Name).NotEmpty().WithMessage(Messages.CategoryNameEmpty);
+            RuleFor(c => c.Description).NotEmpty().WithMessage(Messages.CategoryDescriptionEmpty);
+            RuleFor(c => c.Status).NotEmpty();
+            RuleFor(c => c.Description).MaximumLength(150).WithMessage(Messages.CategoryDescriptionTooLong);
+            RuleFor(c => c.Name).MaximumLength(30).WithMessage(Messages.CategoryNameTooLong);
         }
     }
 }

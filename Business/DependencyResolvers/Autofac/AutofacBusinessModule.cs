@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
+using Business.Abstract;
+using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
@@ -17,6 +19,7 @@ namespace Business.DependencyResolvers.Autofac
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<EfCategoryDal>().As<ICategoryDal>().SingleInstance();
+            builder.RegisterType<CategoryManager>().As<ICategoryService>().SingleInstance();
 
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();

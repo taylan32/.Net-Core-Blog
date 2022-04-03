@@ -10,3 +10,10 @@ C:\Users\Taylan\source\repos\Blog\Business\obj\Debug\net5.0\Business.csproj.Core
 C:\Users\Taylan\source\repos\Blog\Business\obj\Debug\net5.0\Business.dll
 C:\Users\Taylan\source\repos\Blog\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\Taylan\source\repos\Blog\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\Core.dll
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\DataAccess.dll
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\Entities.dll
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\Core.pdb
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\Taylan\source\repos\Blog\Business\bin\Debug\net5.0\Entities.pdb
+C:\Users\Taylan\source\repos\Blog\Business\obj\Debug\net5.0\Business.csproj.CopyComplete

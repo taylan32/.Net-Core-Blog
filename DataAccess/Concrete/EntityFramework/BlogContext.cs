@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿using Core.Entities.Concrete;
+using Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,13 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;database=Blog;Trusted_Conntection=true");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;database=Blog;Trusted_Connection=true");
         }
 
         public DbSet<Category> categories { get; set; }
+        public DbSet<User> users { get; set; }
+        public DbSet<Writer> writers { get; set; }
+        public DbSet<OperationClaim> operationClaims { get; set; }
+        public DbSet<UserOperationClaim> userOperationClaims { get; set; }
     }
 }
