@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "lPYo49wQ+Wg5pdjZ+vklW7LJ8As8mIPqjnwWRoI9DmXhhLffvPCVXw3am6RgTIop7NhIJ4/+4cXrDuxfqWcBzA==",
+  "dgSpecHash": "YQry49d8jJp5Ufts3yXKG7mjXqvG9EyBHghrDPMpDtpKO8cGs6juSuagoTR/BA4SNNKPEQdyC7MiZ82swwk32A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Taylan\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\Taylan\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
