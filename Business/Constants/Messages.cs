@@ -24,5 +24,8 @@ namespace Business.Constants
         // Not found
         public const string NotFound = "Not found";
 
+        // Authorization
+        public const string AuthorizationDenied = "Authorization denied";
+
     }
 }
