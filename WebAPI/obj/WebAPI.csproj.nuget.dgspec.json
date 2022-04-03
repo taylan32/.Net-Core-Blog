@@ -4,14 +4,88 @@
     "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj",
-        "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\Taylan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj"
+              },
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Taylan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Taylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +114,207 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Taylan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj"
+              },
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Taylan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Taylan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Taylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Business\\Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
