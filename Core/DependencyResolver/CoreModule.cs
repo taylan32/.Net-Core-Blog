@@ -15,6 +15,7 @@ namespace Core.DependencyResolver
         {
             serviceCollection.AddMemoryCache();
             serviceCollection.AddSingleton<IHttpContextAccessor, IHttpContextAccessor>();
+       
             //serviceCollection.AddSingleton<ICacheManager, MemoryCacheManager>();
         }
     }

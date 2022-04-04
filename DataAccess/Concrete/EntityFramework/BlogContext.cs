@@ -16,10 +16,10 @@ namespace DataAccess.Concrete.EntityFramework
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;database=Blog;Trusted_Connection=true");
         }
 
-        public DbSet<Category> categories { get; set; }
-        public DbSet<User> users { get; set; }
-        public DbSet<Writer> writers { get; set; }
-        public DbSet<OperationClaim> operationClaims { get; set; }
-        public DbSet<UserOperationClaim> userOperationClaims { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Writer> Writers { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }

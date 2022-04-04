@@ -76,3 +76,4 @@ C:\Users\Taylan\source\repos\Blog\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.C
 C:\Users\Taylan\source\repos\Blog\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Taylan\source\repos\Blog\WebAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Taylan\source\repos\Blog\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Taylan\source\repos\Blog\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

@@ -27,5 +27,14 @@ namespace Business.Constants
         // Authorization
         public const string AuthorizationDenied = "Authorization denied";
 
+        //User
+        public const string UserFirstNameEmpty = "First name cannot be empty";
+        public const string UserLastNameEmpty = "Last name cannot be empty";
+        public const string UserEmailEmpty = "Email cannot be empty";
+        public const string UserPasswordError = "Password error";
+        public const string FirstNameTooLong = "Name can have at most 50 letters";
+        public const string LastNameTooLong = "Last name can have at most 50 letters";
+        public const string UserExists = "User already exists";
+
     }
 }
