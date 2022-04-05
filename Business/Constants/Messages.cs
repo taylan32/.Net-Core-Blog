@@ -41,7 +41,10 @@ namespace Business.Constants
         public const string UserExists = "User already exists";
         public const string UserRegistered = "User registered";
         public const string ClaimListed = "Claims Listed";
-        
+
+        // writer
+        public const string AboutEmpty = "About cannot be empty";
+        public const string AboutTooLong = "About can have at most 400 letters";
 
         //Token
         public const string TokenCreated = "Access Token created";

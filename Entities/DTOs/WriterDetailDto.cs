@@ -1,18 +1,19 @@
 ﻿using Core.Entities;
-using Core.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace Entities.DTOs
 {
-    public class Writer : IEntity
+    public class WriterDetailDto : IDto
     {
         public int WriterId { get; set; }
         public int UserId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
         public string About { get; set; }
-
     }
 }
