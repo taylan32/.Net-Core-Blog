@@ -23,7 +23,7 @@ namespace Business.Concrete
             _categoryDal = categoryDal;
         }
 
-        //[SecuredOperation("category-add")]
+        [SecuredOperation("category-add")]
         [ValidationAspect(typeof(CategoryValidator))]
         public Result Add(Category category)
         {

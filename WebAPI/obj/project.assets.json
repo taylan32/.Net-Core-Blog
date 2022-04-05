@@ -2375,10 +2375,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
           "Autofac.Extras.DynamicProxy": "6.0.1",
           "Castle.Core": "4.4.1",
           "FluentValidation": "10.4.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
@@ -8010,6 +8012,7 @@
       "Autofac.Extensions.DependencyInjection >= 7.2.0",
       "Business >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.15",
+      "Microsoft.Extensions.Configuration.Binder >= 6.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -8063,6 +8066,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[5.0.15, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

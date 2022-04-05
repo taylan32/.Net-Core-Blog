@@ -59,9 +59,10 @@ namespace Business.Concrete
             return new SuccessDataResult<User>(result, Messages.Listed);
         }
 
-        public List<OperationClaim> GetClaims(User user)
+        public IDataResult<List<OperationClaim>> GetClaims(User user)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user), Messages.ClaimListed);
+
         }
 
         [ValidationAspect(typeof(UserValidator))]

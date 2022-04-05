@@ -27,6 +27,10 @@ namespace Business.Constants
         // Authorization
         public const string AuthorizationDenied = "Authorization denied";
 
+        //Authentication
+        public const string EmailOrPasswordError = "Email or password is wrong";
+        public const string SignedIn = "Successfully login";
+
         //User
         public const string UserFirstNameEmpty = "First name cannot be empty";
         public const string UserLastNameEmpty = "Last name cannot be empty";
@@ -35,6 +39,12 @@ namespace Business.Constants
         public const string FirstNameTooLong = "Name can have at most 50 letters";
         public const string LastNameTooLong = "Last name can have at most 50 letters";
         public const string UserExists = "User already exists";
+        public const string UserRegistered = "User registered";
+        public const string ClaimListed = "Claims Listed";
+        
+
+        //Token
+        public const string TokenCreated = "Access Token created";
 
     }
 }

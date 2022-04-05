@@ -2,6 +2,7 @@
 using Business.Constants;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
+using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
 using Entities.DTOs;
 using System;
@@ -25,17 +26,40 @@ namespace Business.Concrete
 
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
-            return null;
+            var claims = _userService.GetClaims(user).Data;
+            var accessToken = _tokenHelper.CreateToken(user, claims);
+            return new SuccessDataResult<AccessToken>(accessToken, Messages.TokenCreated);
         }
 
         public IDataResult<User> Login(UserForLoginDto userForLoginDto)
         {
-            throw new NotImplementedException();
+            var userToCheck = _userService.GetByEmail(userForLoginDto.Email);
+            if(userToCheck == null)
+            {
+                return new ErrorDataResult<User>(Messages.NotFound);
+            }
+            if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password, userToCheck.PasswordHash, userToCheck.PasswordSalt))
+            {
+                return new ErrorDataResult<User>(Messages.EmailOrPasswordError);
+            }
+            return new SuccessDataResult<User>(userToCheck, Messages.SignedIn);
         }
 
         public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
         {
-            throw new NotImplementedException();
+            byte[] passwordHash, passwordSalt;
+            HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            var user = new User
+            {
+                Email = userForRegisterDto.Email,
+                FirstName = userForRegisterDto.FirstName,
+                LastName = userForRegisterDto.LastName,
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt,
+                Status = true
+            };
+            _userService.Add(user);
+            return new SuccessDataResult<User>(user, Messages.UserRegistered);
         }
 
         public IResult UserExists(string email)

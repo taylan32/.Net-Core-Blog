@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "orXQMqx3rMvhn7vQpP29a5wAAHKLdn53pwsm9zcE0fgwpBvva68Bl6sK2nW5LXoA1FtD9ty+s3H3lSfyGokpoQ==",
+  "dgSpecHash": "pFH0TV39tpzikdDqewRFdnaZyzgJKg+1itoe2ohEkgd4XLkkgysBVLOBoaN/0Y8ijB/BdROnhgO/iLfkuz25ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Taylan\\source\\repos\\Blog\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Taylan\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
+    "C:\\Users\\Taylan\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Taylan\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",

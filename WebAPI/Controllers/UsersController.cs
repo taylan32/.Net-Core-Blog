@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Entities.Concrete;
+using Core.Utilities.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -40,6 +42,17 @@ namespace WebAPI.Controllers
                 return Ok(result);
             }
             return BadRequest(result);
+        }
+
+        [HttpGet("getByEmail")]
+        public IActionResult GetByEmail(string email)
+        {
+            var result = _userService.GetByEmail(email);
+            if(result != null)
+            {
+                return Ok(new SuccessDataResult<object>(result, Messages.Listed));
+            }
+            return BadRequest(Messages.NotFound);
         }
 
         [HttpPost("add")]
