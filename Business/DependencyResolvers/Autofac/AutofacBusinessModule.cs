@@ -38,6 +38,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfBlogDal>().As<IBlogDal>().SingleInstance();
             builder.RegisterType<BlogManager>().As<IBlogService>().SingleInstance();
 
+            builder.RegisterType<EfCommentDal>().As<ICommentDal>().SingleInstance();
+            builder.RegisterType<CommentManager>().As<ICommentService>().SingleInstance();
+
             builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
             builder.RegisterType<JWTHelper>().As<ITokenHelper>().SingleInstance();
 
