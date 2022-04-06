@@ -41,7 +41,7 @@ namespace WebAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
             });
 
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+           // services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddCors();
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();

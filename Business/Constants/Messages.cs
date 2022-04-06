@@ -46,6 +46,11 @@ namespace Business.Constants
         public const string AboutEmpty = "About cannot be empty";
         public const string AboutTooLong = "About can have at most 400 letters";
 
+        // blog
+        public const string BlogContentEmpty = "Content cannot be empty";
+        public const string BlogTitleEmpty = "Title cannot be empty";
+        public const string BlogTitleTooLong = "Title can have at most 50 letters";
+
         //Token
         public const string TokenCreated = "Access Token created";
 

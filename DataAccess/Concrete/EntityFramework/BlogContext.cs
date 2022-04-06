@@ -21,5 +21,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Writer> Writers { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

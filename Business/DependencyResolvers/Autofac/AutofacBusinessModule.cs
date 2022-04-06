@@ -35,6 +35,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfWriterDal>().As<IWriterDal>().SingleInstance();
             builder.RegisterType<WriterManager>().As<IWriterService>().SingleInstance();
 
+            builder.RegisterType<EfBlogDal>().As<IBlogDal>().SingleInstance();
+            builder.RegisterType<BlogManager>().As<IBlogService>().SingleInstance();
 
             builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
             builder.RegisterType<JWTHelper>().As<ITokenHelper>().SingleInstance();
